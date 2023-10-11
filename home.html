@@ -2,90 +2,89 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-     initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="./css/style-padrão.css">
     <title>HOME</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list"></i></li>
-                <li><i class="bi bi-geo-alt"></i></li>
-                <li><p>Rio de Janeiro, RJ</p></li>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <li><a href="login.html"><i class="bi bi-person-circle"></i></a></li>
+                <li id="imagem-localizacao"><i class="bi bi-geo-alt"></i><p class="nome-localizacao">Rio de Janeiro, RJ</p></li>
                 <li><i class="bi bi-card-image"></i></li>
             </ul>
         </nav>
-     
     </header>
     <main>
-        <span>
-            <h1>SAG FOOD</h1>
-            <h2>Olá, Seja Muito bem-vindo(a)!</h2>
-            <h3>Vamos fazer o seu pedido</h3>
-        </span>
-        <section>
-            <i class="bi bi-search"></i>
-            <input type="text" placeholder="Digite seu pedido aqui">
-
+        <section id="mensagens-inicio">
+            <h1 id="nome-empresa">SAG FOOD</h1>
+            <h2 class="mensagem">Olá, Seja Muito bem-vindo(a)!</h2>
+            <h3 class="mensagem">Vamos fazer o seu pedido</h3>
         </section>
-        <section>
-           <ul>
-            <li><a href="">Categoria 1</a></li>
-            <li><a href="">Categoria 2</a></li>
-            <li><a href="">Categoria 3</a></li>
-            <li><a href="">Categoria 4</a></li>
-           </ul> 
-        </section>
-        <section>
-            <div>
-                <img src="https://saipos.com/_next/image?url=https%3A%2F%2Fcms-cdn.saipos.com%2Fassets%2F2021%2F09%2F09%2Fdelivery-yakisoba-saipos-sistema-para-restaurante-1_uid_613a5e773cbef.jpg&w=1080&q=75" alt="imagem exemplo">
-                <h3>Japonês </h3>
-            </div>
-            <div>
-                <img src="https://blog.cidadecancao.com/wp-content/uploads/2020/04/shutterstock_421918294-1.jpg" alt="imagem exemplo">
-                <h3>Massas </h3>
-            </div>
-            <div>
-                <img src="https://s5.static.brasilescola.uol.com.br/be/2023/03/pizza-italiana-tradicional-com-tomates-e-manjericao-em-alusao-a-historia-da-pizza.jpg" alt="imagem exemplo">
-                <h3>Pizza</h3>
-            </div>
-            <div>
-                <img src="https://www.rbsdirect.com.br/imagesrc/35710812.jpg?w=800&h=535" alt="imagem exemplo">
-                <h3>Brasileira </h3>
-            </div>
-            <div>
-                <a href=""> Ver mais>> </a>
-            
-            </div>
-
-        </section>
-        <section>
-            <p>AVALIE NOSSO APP</p>
-            <i class="bi bi-hand-thumbs-up"></i>
-            <i class="bi bi-hand-thumbs-down"></i>
-            <span>Sua avaliação pode gerar CUPONS!</span>
+        <section id="input">
+            <input type="text" id="input-text" placeholder="Digite seu pedido aqui">
+            <i class="bi-search"></i>
         </section>
         
-       <footer>
-        <ul>
-            <li>
-                <a href=""><i class="bi bi-house"></i> <p>HOME</p></a>
-            </li>
-            <li>
-                <a href=""><i class="bi bi-emoji-smile"></i> <p>PERFIL</p></a>
-            </li>
-            <li>
-                <a href=""><i class="bi bi-receipt"></i> <p>CUPONS</p></a>
-            </li>
-            <li>
-                <a href=""><i class="bi bi-star"></i> <p>PEDIDOS</p></a>
-            </li>
-        </ul>
-       </footer>
+        <section id="categorias">
+            <ul>
+                <li class="categoria-a"><a href="categoria">Categoria1</a></li>
+                <li class="categoria-a"><a href="categoria">Categoria2</a></li>
+                <li class="categoria-a"><a href="categoria">Categoria3</a></li>
+                <li class="categoria-a"><a href="categoria">Categoria4</a></li>
+                
+            </ul>
+        </section>
+        
+        <section id="cards-produtos">
+            <div class="card-produto">
+                <img src="https://th.bing.com/th/id/R.ee2e08da808e3cd06bb4e37f9f53036e?rik=2bM5twhTiz5elg&pid=ImgRaw&r=0">
+                <h3 class="nome-do-produto">Japonês</h3>
+            </div>
+            <div class="card-produto">
+                <img src="https://www.mentoday.ru/upload/img_cache/a3d/a3dfb6f7943a2c206ee4fb2fe08a8c33_ce_1920x1280x0x0_cropped_1332x888.jpg">
+                <h3 class="nome-do-produto">Massas</h3>
+            </div>
+            <div class="card-produto">
+                <img src="https://s5.static.brasilescola.uol.com.br/be/2023/03/pizza-italiana-tradicional-com-tomates-e-manjericao-em-alusao-a-historia-da-pizza.jpg" alt="imagem exemplo">
+                <h3 class="nome-do-produto" >Pizza</h3>
+            </div>
+            <div class="card-produto">
+                <img src="https://www.rbsdirect.com.br/imagesrc/35710812.jpg?w=800&h=535" alt="imagem exemplo">
+                <h3 class="nome-do-produto">Brasileira</h3>
+            </div>
+            
+        </section>
 
+        <div id="ver-mais">
+            <a href="#">
+                Ver mais  <i class="bi bi-chevron-right"></i>
+            </a>
+        </div>
+        
+
+        <section id="avaliacao">
+            <a href="avaliacao.html">
+                <p id="titulo-avaliacao">AVALIE NOSSO APP</p>
+                <i class="bi bi-hand-thumbs-up"></i>
+                <i class="bi bi-hand-thumbs-down"></i>
+                <span class="mensagem" style="text-decoration: none;">Sua avaliação pode gerar CUPONS!</span>
+            </a>
+        </section>
+        
+        
+        
+        <footer id="footer" class="footer">
+            <ul class="footer-card">
+                <li class="footer-item"><a href="home.html"><i class="bi bi-house"></i><p class="footer-nome-intem">HOME</p></a></li>
+                <li class="footer-item"><a href="cadastro_usuario.html"><i class="bi bi-emoji-smile"></i><p class="footer-nome-intem">CADASTRO DE USUARIO</p></a></li>
+                <li class="footer-item"><a href=""><i class="bi bi-upc-scan"></i><p>CADASTRO DE PRODUTO</p></a></li>
+                <li class="footer-item"><a href=""><i class="bi bi-cart"></i><p>CARRINHO</p></a></li>
+                <li class="footer-item"><a href=""><i class="bi bi-stickies"></i><p>PRODUTO</p></a></li>
+            </ul>
+        </footer>
     </main>
-    
 </body>
 </html>

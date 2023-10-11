@@ -291,14 +291,7 @@ i.bi-house{
     color: rgb(207, 190, 190);
 }
 
-/* Adicione esse código CSS ao seu arquivo de estilo (style-padrão.css) */
 
-/* Estilize os elementos para telas menores (até 480px de largura) */
-/* Adicione este código CSS ao seu arquivo de estilo (style-padrão.css) */
-
-/* Estilize os elementos para telas menores (até 480px de largura) */
-/* Estilize os elementos para telas menores (até 480px de largura) */
-/* Estilize os elementos para telas menores (até 480px de largura) */
 @media screen and (max-width: 480px) {
     body {
       width: 100%;

@@ -2,55 +2,104 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-     initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/produto.css">
+    <script src="produto.js"></script>
     <title>PRODUTOS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #FF9800;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .geolocation {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        section h1 {
+            font-size: 36px;
+            color: var(--cor-do-produto); /* Substitua pelo código da sua cor */
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #FF9800;
+            padding: 20px 0;
+            border-top: 1px solid #ccc;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <header>
-
         <nav>
             <ul>
                 <li><i class="bi bi-list"></i></li>
                 <li><i class="bi bi-geo-alt"></i></li>
-                <li><p>Rio de Janeiro, RJ</p></li>
+                <li><p class="geolocation">Rio de Janeiro, RJ</p></li>
                 <li><i class="bi bi-card-image"></i></li>
             </ul>
         </nav>
-     
     </header>
 
     <section>
         <i class="bi bi-chevron-double-left"></i>
         <i class="bi bi-heart-fill"></i>
-    </section>
-
-    <section>
-        <h1>SAG FOOD</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellat adipisci ut perferendis provident quasi suscipit? Porro animi quisquam pariatur ut repellat reprehenderit quos laboriosam ratione exercitationem iste. Tempore, accusamus.</p>
+        
+        <h1>SAG FOOD <i class="bi bi-hamburger"></i></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellat adipisci ut perferendis provident quasi suscipit? Porro animi quisquam pariatur ut repellat reprehenderit quos laboriosam ratione exercitationem iste. Tempore, accusamus.</p>
          
-         <div>
+         <div class="product">
             <img src="https://saipos.com/_next/image?url=https%3A%2F%2Fcms-cdn.saipos.com%2Fassets%2F2021%2F09%2F09%2Fdelivery-yakisoba-saipos-sistema-para-restaurante-1_uid_613a5e773cbef.jpg&w=1080&q=75" alt="imagem do produto">
-            <div>
-                <i class="bi bi-dash-square"></i>
-                <p>1</p>
-                <i class="bi bi-plus-square"></i>
-
+            <div class="product-details">
+                <div class="quantity">
+                    <i class="bi bi-dash-square" onclick="decreaseQuantity()"></i>
+                    <p id="quantity">1</p>
+                    <i class="bi bi-plus-square" onclick="increaseQuantity()"></i>
+                </div>
+                <div>
+                    <p>Preço Unitário</p>
+                    <p>R$ 0.00,00</p>
+                </div>
+                <div class="add-to-cart">
+                    <i class="bi bi-cart-plus"></i>
+                    <button>ADICIONAR AO CARRINHO!</button>
+                </div>
             </div>
-         </div>
-         <div>
-            <p>Preço Unitário </p>
-            <p>R$ 0.00,00</p>
-
-         </div>
-         <div>
-            <i class="bi bi-cart-plus"></i>
-            <button>ADICIONAR AO CARRINHO!</button>
-         </div>
+        </div>
     </section>
-
-
+    
     <footer>
         <ul>
             <li>
@@ -66,6 +115,7 @@
                 <a href=""><i class="bi bi-star"></i> <p>PEDIDOS</p></a>
             </li>
         </ul>
-       </footer>
-    
+    </footer>
 </body>
+</html>
+
